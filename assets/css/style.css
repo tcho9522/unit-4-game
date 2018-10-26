@@ -1,0 +1,53 @@
+.userPanel{
+    float: left;
+    max-width: 560px;
+    height: 730px;
+    background-color: antiquewhite;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.chooserTile{
+    width: 520px;
+    height: 160px;
+    border: 20px solid beige;
+    float: left;
+    /* margin: 0px auto; */
+    background-color: beige;   
+}
+.portraitTile{
+    float: left;
+    height: 250px;
+    width: 100%;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+#portrait{
+    width: auto;
+    height: 96%;
+    border: 5px solid black;
+    
+}
+.abilitiesTile{
+    float: left;
+    height: 280px;
+    width: 100%;
+    background-color: grey;
+}
+.dialogue{
+    font-weight: bold;
+    font-size: 30px;
+    border: 5px solid blue;
+    height: 190px;
+    width: 600px;
+    float: left;
+    text-align: center;
+}
+.pokePics{
+    width: 160px;
+    height: 160px;
+    float: left;
+}
+
+#squirtle {
+    margin: 0px 20px;
+}
