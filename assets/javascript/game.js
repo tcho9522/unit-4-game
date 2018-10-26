@@ -1,14 +1,3 @@
-var bulbasaur = {
-    name: "Bulbasaur",
-    hp: 45,
-    attack: 49,
-    defense: 49,
-    speed: 45,
-    type: "grass",
-    move1: "Tackle",
-    move2: "Mud shot",     // Lowers speed
-    move3: "Razor leaf",
-}
 var charmander = {
     name: "Charmander",
     hp: 39,
@@ -31,6 +20,17 @@ var squirtle = {
     move2: "Tailwhip",
     move3: "Water gun",
 }
+var bulbasaur = {
+    name: "Bulbasaur",
+    hp: 45,
+    attack: 49,
+    defense: 49,
+    speed: 45,
+    type: "grass",
+    move1: "Tackle",
+    move2: "Mud shot",     // Lowers speed
+    move3: "Razor leaf",
+}
 
 
 var chosenPokemon;
@@ -38,24 +38,29 @@ var starter;
 $(".pokePics").on("click", function () {
     chosenPokemon = $(this).attr('id');
     if (chosenPokemon === "charmander") {
-        starter = new Pokemon("Charmander", 39, 52, 43, 65, "fire", "Scratch,", "Growl", "Ember");
-        $(".dialogue").text("You chose Charmander!");
+        starter = new Pokemon("Charmander", 39, 52, 43, 65, "fire", "Scratch", "Growl", "Ember");
         $("#squirtle").fadeTo(500, .2);
         $("#bulbasaur").fadeTo(500, .2);
+        $(".portraitTile").html("<img id='portrait' src='assets/images/charmander.png' alt=''>");
 
     }
     else if (chosenPokemon === "squirtle") {
-        starter = bulbasaur;
-        console.log(starter)
-        $(".dialogue").text("You chose Squirtle!");
+        starter = new Pokemon("Squirtle", 44, 48, 65, 43, "water", "Tackle", "Tailwhip", "Water gun");
         $("#charmander").fadeTo(500, .2);
         $("#bulbasaur").fadeTo(500, .2);
+        $(".portraitTile").html("<img id='portrait' src='assets/images/squirtle.png' alt=''>")
     }
     else if (chosenPokemon === "bulbasaur") {
-        $(".dialogue").text("You chose Bulbasaur!");
+        starter = new Pokemon("Bulbasaur", 45, 49, 49, 45, "grass", "Tackle", "Mud shot", "Razor leaf");
         $("#charmander").fadeTo(500, .2);
         $("#squirtle").fadeTo(500, .2);
+        $(".portraitTile").html("<img id='portrait' src='assets/images/bulbasaur.png' alt=''>")
     }
+    $(".dialogue").text("You chose " + starter.name + "!");
+    $(".button1").html(starter.move1);
+    $(".button2").html(starter.move2);
+    $(".button3").html(starter.move3);
+    $(".button4").html("---");
     $(".pokePics").off("click");        // So that you can only choose once
 })
 

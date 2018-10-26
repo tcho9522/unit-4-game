@@ -14,6 +14,15 @@
     /* margin: 0px auto; */
     background-color: beige;   
 }
+.pokePics{
+    width: 160px;
+    height: 160px;
+    float: left;
+}
+
+#squirtle {
+    margin: 0px 20px;
+}
 .portraitTile{
     float: left;
     height: 250px;
@@ -22,6 +31,7 @@
     text-align: center;
 }
 #portrait{
+    opacity: 0%;
     width: auto;
     height: 96%;
     border: 5px solid black;
@@ -75,12 +85,4 @@
     float: left;
     text-align: center;
 }
-.pokePics{
-    width: 160px;
-    height: 160px;
-    float: left;
-}
 
-#squirtle {
-    margin: 0px 20px;
-}
