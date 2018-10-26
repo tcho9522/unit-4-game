@@ -33,6 +33,39 @@
     width: 100%;
     background-color: grey;
 }
+/* .box1, .box2, .box3, .box4{
+    float: left;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+} */
+.button{
+    float: left;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    background-color: #555555; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1, .button2, .button3, .button4{
+    background-color: white;
+    color: #555555;
+    border: 2px solid #555555;
+}
+.button1:hover, .button2:hover, .button3:hover, .button4:hover{
+    background-color: #555555;
+    color: white;
+}
+
 .dialogue{
     font-weight: bold;
     font-size: 30px;
