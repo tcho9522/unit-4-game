@@ -41,32 +41,32 @@ $(".pokePics").on("click", function () {
         starter = new Pokemon("Charmander", 39, 52, 43, 65, "fire", "Scratch", "Growl", "Ember");
         $("#squirtle").fadeTo(500, .2);
         $("#bulbasaur").fadeTo(500, .2);
-        $(".portraitTile").html("<img id='portrait' src='assets/images/charmander.png' alt=''>");
+        $(".portraitBox").html("<img id='portrait' src='assets/images/charmander.png' alt=''>");
 
     }
     else if (chosenPokemon === "squirtle") {
         starter = new Pokemon("Squirtle", 44, 48, 65, 43, "water", "Tackle", "Tailwhip", "Water gun");
         $("#charmander").fadeTo(500, .2);
         $("#bulbasaur").fadeTo(500, .2);
-        $(".portraitTile").html("<img id='portrait' src='assets/images/squirtle.png' alt=''>")
+        $(".portraitBox").html("<img id='portrait' src='assets/images/squirtle.png' alt=''>")
     }
     else if (chosenPokemon === "bulbasaur") {
         starter = new Pokemon("Bulbasaur", 45, 49, 49, 45, "grass", "Tackle", "Mud shot", "Razor leaf");
         $("#charmander").fadeTo(500, .2);
         $("#squirtle").fadeTo(500, .2);
-        $(".portraitTile").html("<img id='portrait' src='assets/images/bulbasaur.png' alt=''>")
+        $(".portraitBox").html("<img id='portrait' src='assets/images/bulbasaur.png' alt=''>")
     }
     $(".dialogue").text("You chose " + starter.name + "!");
-    $(".button1").html(starter.move1);
+    $(".button1").html(starter.move1).click(function() {
+        console.log("you used " + starter.move1)
+    });
     $(".button2").html(starter.move2);
     $(".button3").html(starter.move3);
     $(".button4").html("---");
+    initializeFight(starter.name);
     $(".pokePics").off("click");        // So that you can only choose once
 })
 
-
-console.log("This is starter " + starter);
-// alert(Pokemon.name);
 
 function Pokemon(name, hp, attack, defense, speed, type, move1, move2, move3) {
     this.name = name;
@@ -79,7 +79,13 @@ function Pokemon(name, hp, attack, defense, speed, type, move1, move2, move3) {
     this.move2 = move2;
     this.move3 = move3;
 }
-
+function initializeFight(starter){
+    if(starter==="Charmander"){
+        $(".pokePortrait").html("<img id = 'portrait' src ='assets/images/charmander.png' alt=''>")
+        $("#onix").css('filter', 'blur(0px) grayscale(0%)');
+        
+    }
+}
 
 // function initiateFight(p1, p2) {
 //     console.log("initiateMove function executed");

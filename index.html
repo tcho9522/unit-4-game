@@ -8,68 +8,71 @@
     <title>Pokemon Green</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/reset.css">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous"> -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <div class="userPanel">
         <div class="chooserTile">
-            <!-- <button class = "pokeBox"><img class = "pokePics" src="assets/images/charmander.png" alt=""></button>
-            <button class = "pokeBox"><img class = "pokePics" src="assets/images/squirtle.png" alt=""></button>
-            <button class = "pokeBox"><img class = "pokePics" src="assets/images/bulbasaur.png" alt=""></button> -->
-            <img id="charmander" class="pokePics" src="assets/images/charmander.png" alt="charmander">
-            <img id="squirtle" class="pokePics" src="assets/images/squirtle.png" alt="squirtle">
-            <img id="bulbasaur" class="pokePics" src="assets/images/bulbasaur.png" alt="bulbasaur">
+            <div class="pokeBox"><img id="charmander" class="pokePics" src="assets/images/charmander.png" alt="charmander"></div>
+            <div class="pokeBox"><img id="squirtle" class="pokePics" src="assets/images/squirtle.png" alt="squirtle"></div>
+            <div class="pokeBox"><img id="bulbasaur" class="pokePics" src="assets/images/bulbasaur.png" alt="bulbasaur"></div>
         </div>
 
         <div class="portraitTile">
-            <!-- <img id="portrait" src="assets/images/charmander.png" alt=""> -->
+            <div class="portraitBox"></div>
+            <div class="statsBox"></div>
         </div>
 
         <div class="abilitiesTile">
-            <!-- <div class="box1"> -->
-                <button class = "button button1">move1</button>
-            <!-- </div> class = "button button 1" -->
-            <!-- <div c class = "button button 1"lass="box2"> -->
-                <button class = "button button2">move2</button>
-            <!-- </div> class = "button button 1" -->
-            <!-- <div c class = "button button 1"lass="box3"> -->
-                <button class = "button button3">move3</button>
-            <!-- </div> class = "button button 1" -->
-            <!-- <div c class = "button button 1"lass="box4"> -->
-                <button class = "button button4">move4</button>
-            <!-- </div> -->
-            <!-- <div class="row">
-                <div class="col-md-6">
-                    <button type="button" class="btn btn-primary btn-lg">Large button</button>
-                </div>
-                <div class="col-md-6">
-                    <button type="button" class="btn btn-primary btn-lg">Large button</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <button type="button" class="btn btn-primary btn-lg">Large button</button>
-                </div>
-                <div class="col-md-6">
-                    <button type="button" class="btn btn-primary btn-lg">Large button</button>
-                </div>
-            </div> -->
+            <button class="button button1">---</button>
+            <button class="button button2">---</button>
+            <button class="button button3">---</button>
+            <button class="button button4">---</button>
         </div>
     </div>
 
-    <div class="displayScreen">
-
-    </div>
-
-    <div class="dialogue">
-        <h1>Choose your starter Pokemon!</h1>
-    </div>
-
-    <div class="">
-
+    <div class="battlePanel">
+        <div class="battleTile">
+            <div class="gymLeader" id="Brock">
+                <div class = "pokePortrait">
+                    <div id="healthBar">88</div>
+                </div> 
+                Brock 
+                <img class="pokeOpponent" id="onix" src="assets/images/onix.png" alt="onix">
+            </div>
+            <div class="gymLeader" id="Misty">
+                Misty 
+                <img class="pokeOpponent" id="starmie" src="assets/images/starmie.png" alt="starnue">
+            </div>
+            <div class="gymLeader" id="Lt. Surge">
+                Lt. Surge 
+                <img class="pokeOpponent" id="raichu" src="assets/images/raichu.png" alt="raichu">
+            </div>
+            <div class="gymLeader" id="Erika">
+                Erika 
+                <img class="pokeOpponent" id="vileplume" src="assets/images/vileplume.png" alt="vileplume">
+            </div>
+            <div class="gymLeader" id="Koga">
+                Koga 
+                <img class="pokeOpponent" id="weezing" src="assets/images/weezing.png" alt="weezing">
+            </div>
+            <div class="gymLeader" id="Sabrina">
+                Sabrina 
+                <img class="pokeOpponent" id="alakazam" src="assets/images/alakazam.png" alt="alakazam">
+            </div>
+            <div class="gymLeader" id="Blaine">
+                Blaine 
+                <img class="pokeOpponent" id="arcanine" src="assets/images/arcanine.png" alt="arcanine">
+            </div>
+            <div class="gymLeader" id="Giovanni">
+                Giovanni 
+                <img class="pokeOpponent" id="nidoking" src="assets/images/nidoking.png" alt="nidoking">
+            </div>
+        </div>
+        <div class="dialogue">
+            <h1>Choose your starter Pokemon!</h1>
+        </div>
     </div>
     <script src="assets/javascript/game.js"></script>
 </body>

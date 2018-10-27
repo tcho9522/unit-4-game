@@ -1,56 +1,67 @@
+body{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 730px;
+}
 .userPanel{
     float: left;
-    max-width: 560px;
-    height: 730px;
-    background-color: antiquewhite;
+    width: 40%;
+    height: 100%;
+    background-color: white;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
+    text-align: center;
 }
 .chooserTile{
-    width: 520px;
-    height: 160px;
-    border: 20px solid beige;
+    width: 100%;
+    height: 23%;
+    /* height: 160px; */
+    /* border: 20px 0px 20px 0px solid beige; */
     float: left;
     /* margin: 0px auto; */
-    background-color: beige;   
+    background-color: white;
+    text-align: center;
+}
+.pokeBox{
+    /* padding: 1%  ; */
+    float: left;
+    width: 33.33%;
+    height: 100%;
 }
 .pokePics{
-    width: 160px;
-    height: 160px;
+    border: 1% solid black;
+    width: auto;
+    height: 98%;
     float: left;
 }
 
-#squirtle {
-    margin: 0px 20px;
-}
 .portraitTile{
     float: left;
-    height: 250px;
-    width: 100%;
-    background-color: blanchedalmond;
+    height: 37%;
+    /* width: 70%; */
+    background-color: black;
+}
+.portraitBox{
+    height: 100%;
     text-align: center;
 }
+.statsBox{
+    float: left;
+    color: white;
+}
 #portrait{
-    opacity: 0%;
+    float: left;
     width: auto;
-    height: 96%;
-    border: 5px solid black;
+    height: 100%;
+    /* border: 2px solid pink; */
     
 }
 .abilitiesTile{
     float: left;
-    height: 280px;
+    height: 40%;
     width: 100%;
     background-color: grey;
 }
-/* .box1, .box2, .box3, .box4{
-    float: left;
-    width: 50%;
-    height: 50%;
-    text-align: center;
-    vertical-align: middle;
-    margin: auto;
-} */
 .button{
     float: left;
     width: 50%;
@@ -76,13 +87,52 @@
     color: white;
 }
 
+.battlePanel{
+    border: 1px solid black;
+    float: left;
+    width: 55%;
+    height: 100%;
+    background-color: white;
+}
+
+.battleTile{
+    float: left;
+    height: 70%;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+}
+.gymLeader{
+    float: left;
+    height: 25%;
+    width: 50%;
+    /* border: 1px solid red; */
+    background-color: azure;
+}
 .dialogue{
     font-weight: bold;
     font-size: 30px;
-    border: 5px solid blue;
-    height: 190px;
-    width: 600px;
+    background-color: lightgrey;
+    height: 30%;
+    width: 100%;
     float: left;
     text-align: center;
 }
 
+
+.pokePortrait{
+    float: left;
+    height: 80%;
+    width: 40%;
+}
+.pokeOpponent{
+    filter: blur(20px) grayscale(100%);
+    float: right;
+    height: 90%;
+    width: auto;
+}
+#healthBar{
+    float: left;
+    width: 100%;
+    height: 10%;
+}
