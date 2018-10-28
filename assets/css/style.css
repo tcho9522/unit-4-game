@@ -128,7 +128,7 @@ body{
 .pokeOpponent{
     filter: blur(20px) grayscale(100%);
     float: right;
-    height: 90%;
+    height: 80%;
     width: auto;
 }
 #healthBar{
